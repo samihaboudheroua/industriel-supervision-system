@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)http://www.services.uc.rnu.tn/4C/index.php/authentifications/connect -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link type="text/css" rel="stylesheet" href="./connect_files/chosen.css">
+	<link type="text/css" rel="stylesheet" href="./connect_files/jquery-ui-1.10.1.custom.min.css">
+	<link type="text/css" rel="stylesheet" href="./connect_files/datatables.css">
+     <link rel="stylesheet" href="./connect_files/stylenew.css">
+	<script src="./connect_files/jquery-1.11.1.min.js"></script>
+	<script src="./connect_files/jquery.chosen.min.js"></script>
+	<script src="./connect_files/jquery.chosen.config.js"></script>
+	<script src="./connect_files/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="./connect_files/jquery.ui.datepicker-fr.js"></script>
+	<script src="./connect_files/jquery.datepicker.config.js"></script>
+	<script src="./connect_files/jquery.numeric.min.js"></script>
+	<script src="./connect_files/jquery.numeric.config.js"></script>
+	<script src="./connect_files/jquery.form.min.js"></script>
+	<script src="./connect_files/datatables-add.js"></script>
+	<script src="./connect_files/jquery.noty.js"></script>
+	<script src="./connect_files/jquery.noty.config.js"></script>
+    
+    
+<script language="JavaScript">
+function popup() {
+w=open("",'popup','width=500px,height=500px'); 
+w.document.write('<img class="posimg0" src="http://www.services.uc.rnu.tn/4C/assets/img/4ctransparent.png" width="20%" height="18%" align="left" />');
+
+
+w.document.write("<BODY>"+"<BR><BR>"+"<BR><BR>"+"<BR><BR>");
+w.document.write('<h1 align="center">Fiche d\'inscription au 4C 2025/2026</h1>');
+w.document.write("<BR><BR>");
+w.document.write("<BR><BR>");
+//w.document.write('<iframe id="datamain"   width="600" height="900" marginwidth="1" marginheight="0" hspace="0" vspace="0" frameborder="1" scrolling="no">');
+var t1="Prénom :";
+var t2="Nom: ";
+var t22="Genre: ";
+var t3="Numéro cin ou passeport: ";
+var t4="Autre adresse émail: ";
+var t41="Email office 365: ";
+var t5="Num de tel(1): ";
+var t6="Num de tel(2): ";
+var t7="Etat civil: ";
+var t8="Date de naissance: ";
+var t9="lieu de naissance: ";
+var t10="Gouvernorat: ";
+var t11="Adresse: ";
+var t12="code postal: ";
+var t131="Année universitaire: ";
+var t13="Etablissement: ";
+var t14="Filière: ";
+var t15="Niveau: ";
+var t151="Situation universitaire: ";
+var t17="Baccalauréat: ";
+var t18="Moyenne du bac: ";
+var t19="Compte Facebook: ";
+w.document.write(t1.bold());
+w.document.write(document.forms[0].elements["Prenom"].value+"<BR><BR>");
+w.document.write(t2.bold());
+w.document.write(document.forms[0].elements["Nom"].value+"<BR><BR>");
+w.document.write(t22.bold());
+w.document.write(document.forms[0].elements["sex"].value+"<BR><BR>");
+w.document.write(t3.bold());
+w.document.write(document.forms[0].elements["cin"].value+"<BR><BR>");
+w.document.write(t7.bold());
+w.document.write(document.forms[0].elements["etat_civil"].value+"<BR><BR>");
+w.document.write(t8.bold());
+w.document.write(document.forms[0].elements["Date_naiss"].value+"<BR><BR>");
+w.document.write(t9.bold());
+w.document.write(document.forms[0].elements["Lieu_naiss"].value+"<BR><BR>");
+w.document.write(t11.bold());
+w.document.write(document.forms[0].elements["Adresse"].value+"<BR><BR>");
+w.document.write(t12.bold());
+w.document.write(document.forms[0].elements["Cod_pst"].value+"<BR><BR>");
+w.document.write(t10.bold());
+w.document.write(document.forms[0].elements["Gouvernorat"].value+"<BR><BR>");
+w.document.write(t17.bold());
+w.document.write(document.forms[0].elements["bac"].value+"<BR><BR>");
+w.document.write(t18.bold());
+w.document.write(document.forms[0].elements["moyen_bac"].value+"<BR><BR>");
+
+w.document.write(t131.bold());
+w.document.write(document.forms[0].elements["ann_univ"].value+"<BR><BR>");
+
+
+w.document.write(t13.bold());
+w.document.write(document.forms[0].elements["Etablissement"].value+"<BR><BR>");
+w.document.write(t14.bold());
+w.document.write(document.forms[0].elements["Filiere1"].value+"<BR><BR>");
+w.document.write(t15.bold());
+w.document.write(document.forms[0].elements["Niv_et"].value+"<BR><BR>");
+
+
+w.document.write(t151.bold());
+w.document.write(document.forms[0].elements["situation_univ"].value+"<BR><BR>");
+w.document.write(t5.bold());
+w.document.write(document.forms[0].elements["Num_tel1"].value+"<BR><BR>");
+w.document.write(t6.bold());
+w.document.write(document.forms[0].elements["Num_tel2"].value+"<BR><BR>");
+w.document.write(t41.bold());
+w.document.write(document.forms[0].elements["mail_office"].value+"<BR><BR>");
+w.document.write(t4.bold());
+w.document.write(document.forms[0].elements["Login"].value+"<BR><BR>");
+w.document.write(t19.bold());
+w.document.write(document.forms[0].elements["fb"].value+"<BR><BR>");
+w.document.write("</BODY>");
+w.document.close();
+w.print();
+}
+</script>    
+
+</head>
+<body>
+<div class="carre1"> 
+
+<h3>&nbsp;</h3>
+<h3>&nbsp;</h3>
+
+
+<h1 align="center" style="color:#22427C;top:500px;font-size:22px;">Bienvenue dans l'éspace 4C de l'université de Sousse!</h1>
+
+</div>
+<div class="separation"> </div>
+<div><img class="posimg0" src="./connect_files/4ctransparent.png" width="20%" height="18%" align="right">
+<img class="posimg1" src="./connect_files/profilTR.png" width="30" height="30" align="right">
+<img class="posimg2" src="./connect_files/bat3TR.png" width="30" height="30" align="right">
+<p class="postxt1" style="color:#26C4EC; font-size:20px;font-style:oblique">Samiha Boudheroua</p>
+<p class="postxt2" style="color:#5A5E6B; font-size:20px;font-style:oblique"><a style="color:#26C4EC;" href="http://www.services.uc.rnu.tn/4C/index.php/Deconnexion/Decon">Déconnexion</a></p>
+
+
+ </div>
+
+<h3>&nbsp;</h3>
+<h3>&nbsp;</h3>
+<h3>&nbsp;</h3>
+<h3>&nbsp;</h3>
+<h3>&nbsp;</h3>
+<h3>&nbsp;</h3>
+<h3>&nbsp;</h3>
+
+
+
+   
+
+
+
+   
+   
+		<div class="ui-widget-content ui-corner-all datatables">
+	<h3 class="ui-accordion-header ui-helper-reset ui-state-default form-title">
+		<div class="floatL form-title-left">
+			<a href="http://www.services.uc.rnu.tn/4C/index.php/authentifications/connect#" style="color:#CC0033">Les champs en (*) sont obligatoires. Toute modification doit être enregistrée!</a>
+		</div>
+		<div class="clear"></div>
+	</h3>
+    
+<div class="form-content form-div">
+
+    <form action="http://www.services.uc.rnu.tn/4C/index.php/etudiant/EtUpdate" method="post">
+		<div>
+
+	<div class="form-field-box odd" id="Prenom_field_box">
+				<div class="form-display-as-box" id="Prenom_display_as_box" style="color:#000000;font-size:14px;font-weight:bold;">
+					Prénom<span>*</span> :
+				</div>
+				<div class="form-input-box" id="Prenom_input_box">
+					<input id="field-Prenom" class="form-control" name="Prenom" type="text" value="Samiha" maxlength="50" required="">				</div>
+				<div class="clear"></div>
+			</div>
+
+						<div class="form-field-box even" id="Nom_field_box">
+				<div class="form-display-as-box" id="Nom_display_as_box" style="color:#000000;font-size:14px;font-weight:bold;">
+					Nom<span>*</span> :
+				</div>
+				<div class="form-input-box" id="Nom_input_box">
+					<input id="field-Nom" class="form-control" name="Nom" type="text" value="Boudheroua" maxlength="50" required="">				</div>
+				<div class="clear"></div>
+			</div>
+            
+            
+            
+            	<div class="form-field-box odd" id="sex_field_box">
+				<div class="form-display-as-box" id="sex_display_as_box" style="color:#000000;font-size:14px;font-weight:bold;">
+					Genre<span>*</span> 
+				</div>
+				<div class="form-input-box" id="sex_input_box">
+<select id="field-sex" name="sex" class="chosen-select chzn-done" data-placeholder="Féminin" required="" style="display: none;">
+
+<option value="Féminin"></option><option value="Masculin">Masculin</option><option value="Féminin">Féminin</option></select><div id="field_sex_chzn" class="chzn-container chzn-container-single" style="width: 200px;"><a href="javascript:void(0)" class="chzn-single chzn-default" tabindex="-1"><span>Féminin</span><div><b></b></div></a><div class="chzn-drop" style="left: -9000px; width: 198px; top: 25px;"><div class="chzn-search"><input type="text" autocomplete="off" style="width: 178px;"></div><ul class="chzn-results"><li id="field_sex_chzn_o_1" class="active-result" style="">Masculin</li><li id="field_sex_chzn_o_2" class="active-result" style="">Féminin</li></ul></div></div>				</div>
+				<div class="clear"></div>
+			</div>
+					
+            
+            
+            
+            
+            
+            
+            
+					
+						<div class="form-field-box even" id="cin_field_box">
+				<div class="form-display-as-box" id="cin_display_as_box" style="color:#606060;font-size:13px;font-weight:bold;">
+					CIN ou numéro de passeport :
+				</div>
+				<div class="form-input-box" id="cin_input_box">
+					<input id="field-cin" class="form-control" name="cin" type="text" value="12881707" maxlength="8">				</div>
+				<div class="clear"></div>
+			</div>
+						<div class="form-field-box odd" id="etat_civil_field_box">
+				<div class="form-display-as-box" id="etat_civil_display_as_box" style="color:#000000;font-size:14px;font-weight:bold;">
+					Etat civil<span>*</span> :
+				</div>
+				<div class="form-input-box" id="etat_civil_input_box">
+<select id="field-etat_civil" name="etat_civil" class="chosen-select chzn-done" data-placeholder="Célibataire" required="" style="display: none;">
+<option value="Célibataire"></option><option value="Célibataire">Célibataire</option><option value="Marié(e)">Marié(e)</option><option value="Autre">Autre</option>&gt;</select><div id="field_etat_civil_chzn" class="chzn-container chzn-container-single" style="width: 200px;"><a href="javascript:void(0)" class="chzn-single chzn-default" tabindex="-1"><span>Célibataire</span><div><b></b></div></a><div class="chzn-drop" style="left: -9000px; width: 198px; top: 25px;"><div class="chzn-search"><input type="text" autocomplete="off" style="width: 178px;"></div><ul class="chzn-results"><li id="field_etat_civil_chzn_o_1" class="active-result" style="">Célibataire</li><li id="field_etat_civil_chzn_o_2" class="active-result" style="">Marié(e)</li><li id="field_etat_civil_chzn_o_3" class="active-result" style="">Autre</li></ul></div></div>				</div>
+				<div class="clear"></div>
+			</div>
+            
+            
+            
+						<div class="form-field-box even" id="Date_naiss_field_box">
+				<div class="form-display-as-box" id="Date_naiss_display_as_box" style="color:#000000;font-size:14px;font-weight:bold;">
+					Date de naissance<span>*</span> :
+				</div>
+				<div class="form-input-box" id="Date_naiss_input_box">
+
+<input type="date" name="Date_naiss" value="2001-06-13" required="">
+		<a class="datepicker-input-clear ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" tabindex="-1" role="button" aria-disabled="false"><span class="ui-button-text">Initialiser</span></a> (jj/mm/aaaa)				</div>
+				<div class="clear"></div>
+			</div>
+            
+
+            
+            
+            
+            
+            
+            
+						<div class="form-field-box odd" id="Lieu_naiss_field_box">
+				<div class="form-display-as-box" id="Lieu_naiss_display_as_box" style="color:#000000;font-size:14px;font-weight:bold;">
+					Lieu de naissance<span>*</span> :
+				</div>
+				<div class="form-input-box" id="Lieu_naiss_input_box">
+					<input id="field-Lieu_naiss" class="form-control" name="Lieu_naiss" type="text" value="Enfidha" maxlength="50" required="">				</div>
+				<div class="clear"></div>
+			</div>
+						<div class="form-field-box even" id="Adresse_field_box">
+				<div class="form-display-as-box" id="Adresse_display_as_box" style="color:#000000;font-size:14px;font-weight:bold;">
+					Adresse<span>*</span> :
+				</div>
+				<div class="form-input-box" id="Adresse_input_box">
+					<input id="field-Adresse" class="form-control" name="Adresse" type="text" value="Enfidha sousse" maxlength="200" required="">				</div>
+				<div class="clear"></div>
+			</div>
+						<div class="form-field-box odd" id="Cod_pst_field_box">
+				<div class="form-display-as-box" id="Cod_pst_display_as_box" style="color:#000000;font-size:14px;font-weight:bold;">
+					Code postal<span>*</span> :
+				</div>
+				<div class="form-input-box" id="Cod_pst_input_box">
+					<input id="field-Cod_pst" name="Cod_pst" type="text" value="4030" class="numeric form-control" maxlength="4" required="" style="width:100px">				</div>
+				<div class="clear"></div>
+			</div>
+						<div class="form-field-box even" id="Gouvernorat_field_box">
+				<div class="form-display-as-box" id="Gouvernorat_display_as_box" style="color:#000000;font-size:14px;font-weight:bold;">
+					Gouvernorat<span>*</span> :
+				</div>
+				<div class="form-input-box" id="Gouvernorat_input_box">
+<select id="field-Gouvernorat" name="Gouvernorat" class="chosen-select chzn-done" data-placeholder="Sousse" required="" style="display: none;"><option value="Sousse"></option><option value="Ariana">Ariana</option><option value="Béja">Béja</option><option value="Ben Arous">Ben Arous</option><option value="Bizerte">Bizerte</option><option value="Gabès">Gabès</option><option value="Gafsa">Gafsa</option><option value="Jendouba">Jendouba</option><option value="Kairouan">Kairouan</option><option value="Kasserine">Kasserine</option><option value="Kébili">Kébili</option><option value="Kef">Kef</option><option value="Mahdia">Mahdia</option><option value="Manouba">Manouba</option><option value="Médenine">Médenine</option><option value="Monastir">Monastir</option><option value="Nabeul">Nabeul</option><option value="Sfax">Sfax</option><option value="Sidi Bouzid">Sidi Bouzid</option><option value="Siliana">Siliana</option><option value="Sousse">Sousse</option><option value="Tataouine">Tataouine</option><option value="Tozeur">Tozeur</option><option value="Tunis">Tunis</option><option value="Zaghouan">Zaghouan</option></select><div id="field_Gouvernorat_chzn" class="chzn-container chzn-container-single" style="width: 200px;"><a href="javascript:void(0)" class="chzn-single chzn-default" tabindex="-1"><span>Sousse</span><div><b></b></div></a><div class="chzn-drop" style="left: -9000px; width: 198px; top: 25px;"><div class="chzn-search"><input type="text" autocomplete="off" style="width: 178px;"></div><ul class="chzn-results"><li id="field_Gouvernorat_chzn_o_1" class="active-result" style="">Ariana</li><li id="field_Gouvernorat_chzn_o_2" class="active-result" style="">Béja</li><li id="field_Gouvernorat_chzn_o_3" class="active-result" style="">Ben Arous</li><li id="field_Gouvernorat_chzn_o_4" class="active-result" style="">Bizerte</li><li id="field_Gouvernorat_chzn_o_5" class="active-result" style="">Gabès</li><li id="field_Gouvernorat_chzn_o_6" class="active-result" style="">Gafsa</li><li id="field_Gouvernorat_chzn_o_7" class="active-result" style="">Jendouba</li><li id="field_Gouvernorat_chzn_o_8" class="active-result" style="">Kairouan</li><li id="field_Gouvernorat_chzn_o_9" class="active-result" style="">Kasserine</li><li id="field_Gouvernorat_chzn_o_10" class="active-result" style="">Kébili</li><li id="field_Gouvernorat_chzn_o_11" class="active-result" style="">Kef</li><li id="field_Gouvernorat_chzn_o_12" class="active-result" style="">Mahdia</li><li id="field_Gouvernorat_chzn_o_13" class="active-result" style="">Manouba</li><li id="field_Gouvernorat_chzn_o_14" class="active-result" style="">Médenine</li><li id="field_Gouvernorat_chzn_o_15" class="active-result" style="">Monastir</li><li id="field_Gouvernorat_chzn_o_16" class="active-result" style="">Nabeul</li><li id="field_Gouvernorat_chzn_o_17" class="active-result" style="">Sfax</li><li id="field_Gouvernorat_chzn_o_18" class="active-result" style="">Sidi Bouzid</li><li id="field_Gouvernorat_chzn_o_19" class="active-result" style="">Siliana</li><li id="field_Gouvernorat_chzn_o_20" class="active-result" style="">Sousse</li><li id="field_Gouvernorat_chzn_o_21" class="active-result" style="">Tataouine</li><li id="field_Gouvernorat_chzn_o_22" class="active-result" style="">Tozeur</li><li id="field_Gouvernorat_chzn_o_23" class="active-result" style="">Tunis</li><li id="field_Gouvernorat_chzn_o_24" class="active-result" style="">Zaghouan</li></ul></div></div>				</div>
+				<div class="clear"></div>
+			</div>
+            						<div class="form-field-box odd" id="bac_field_box">
+				<div class="form-display-as-box" id="bac_display_as_box" style="color:#000000;font-size:14px;font-weight:bold;">
+					Baccalauréat<span>*</span> :
+				</div>
+				<div class="form-input-box" id="bac_input_box">
+					<select id="field-bac" name="bac" class="chosen-select chzn-done" data-placeholder="Section Sciences Expérimentales" required="" style="display: none;"><option value="Section Sciences Expérimentales"></option><option value="Mathématiques">Mathématiques</option><option value="Section Sciences Expérimentales">Section Sciences Expérimentales</option><option value="Economie et Gestion">Economie et Gestion</option><option value="Sciences Techniques">Sciences Techniques</option><option value="Sciences Informatique">Sciences Informatique</option><option value="Éducation physique">Éducation physique</option><option value="Lettres">Lettres</option></select><div id="field_bac_chzn" class="chzn-container chzn-container-single" style="width: 240px;"><a href="javascript:void(0)" class="chzn-single chzn-default" tabindex="-1"><span>Section Sciences Expérimentales</span><div><b></b></div></a><div class="chzn-drop" style="left: -9000px; width: 238px; top: 25px;"><div class="chzn-search"><input type="text" autocomplete="off" style="width: 218px;"></div><ul class="chzn-results"><li id="field_bac_chzn_o_1" class="active-result" style="">Mathématiques</li><li id="field_bac_chzn_o_2" class="active-result" style="">Section Sciences Expérimentales</li><li id="field_bac_chzn_o_3" class="active-result" style="">Economie et Gestion</li><li id="field_bac_chzn_o_4" class="active-result" style="">Sciences Techniques</li><li id="field_bac_chzn_o_5" class="active-result" style="">Sciences Informatique</li><li id="field_bac_chzn_o_6" class="active-result" style="">Éducation physique</li><li id="field_bac_chzn_o_7" class="active-result" style="">Lettres</li></ul></div></div>				</div>
+				<div class="clear"></div>
+			</div>  
+						
+            
+                        <div class="form-field-box even" id="moyen_bac_field_box">
+				<div class="form-display-as-box" id="moyen_bac_display_as_box" style="color:#000000;font-size:14px;font-weight:bold;">
+					Moyenne du bac<span>*</span> :
+				</div>
+				<div class="form-input-box" id="moyen_bac_input_box">
+					<input id="field-moyen_bac" class="form-control" name="moyen_bac" type="text" value="10.57" required="" style="width:100px">				</div>
+				<div class="clear"></div>
+			</div>
+            
+            
+           
+            
+            
+          <div class="form-field-box odd" id="ann_univ_field_box">
+				<div class="form-display-as-box" id="ann_univ_display_as_box" style="color:#000000;font-size:14px;font-weight:bold;">
+					Année universitaire<span>*</span> :
+				</div>
+				<div class="form-input-box" id="ann_univ_input_box">
+					<select id="field-ann_univ" name="ann_univ" class="chosen-select chzn-done" data-placeholder="2025/2026" style="display: none;"><option value="2025/2026"></option>
+					
+					<option value="2025/2026" selected="selected">2025/2026</option>
+					</select><div id="field_ann_univ_chzn" class="chzn-container chzn-container-single" style="width: 200px;"><a href="javascript:void(0)" class="chzn-single" tabindex="-1"><span>2025/2026</span><abbr class="search-choice-close"></abbr><div><b></b></div></a><div class="chzn-drop" style="left: -9000px; width: 198px; top: 25px;"><div class="chzn-search"><input type="text" autocomplete="off" style="width: 178px;"></div><ul class="chzn-results"><li id="field_ann_univ_chzn_o_1" class="active-result result-selected" style="">2025/2026</li></ul></div></div>				</div>
+				<div class="clear"></div>
+			</div>      
+            
+            
+            
+<div class="form-field-box even" id="Etablissement_field_box">
+			<div class="form-display-as-box" id="Etablissement_display_as_box" style="color:#000000;font-size:14px;font-weight:bold;">
+					Etablissement<span>*</span> :
+				</div>
+				<div class="form-input-box" id="Etablissement_input_box">
+<select id="field-Etablissement" name="Etablissement" class="chosen-select chzn-done" data-placeholder="Ecole Nationale d’Ingénieurs de Sousse" onchange="changerBCCH()" required="" style="display: none;"><option value="Ecole Nationale d’Ingénieurs de Sousse"></option><option value="Faculté  de  Médecine  de  Sousse">Faculté  de  Médecine  de  Sousse</option>
+<option value="Faculté de Droit et des Sciences Politiques de Sousse">Faculté de Droit et des Sciences Politiques de Sousse</option>
+<option value="Faculté des sciences économiques et de gestion de Sousse">Faculté des sciences économiques et de gestion de Sousse</option>
+<option value="Faculté des Lettres et des Sciences Humaines de Sousse">Faculté des Lettres et des Sciences Humaines de Sousse</option>
+<option value="Institut Supérieur de Gestion de Sousse">Institut Supérieur de Gestion de Sousse</option>
+<option value="Institut Supérieur d’Informatique et des Technologies de Communication de Sousse">Institut Supérieur d’Informatique et des Technologies de Communication de Sousse</option>
+<option value="Institut des Hautes Etudes Commerciales de Sousse">Institut des Hautes Etudes Commerciales de Sousse</option>
+<option value="Institut Supérieur des Sciences Appliquées et de Technologie de Sousse">Institut Supérieur des Sciences Appliquées et de Technologie de Sousse</option>
+<option value="Institut Supérieur Agronomique de Chott-Meriem">Institut Supérieur Agronomique de Chott-Meriem</option>
+<option value="Institut Supérieur de Musique de Sousse">Institut Supérieur de Musique de Sousse</option>
+<option value="Institut Supérieur des Beaux-Arts de Sousse">Institut Supérieur des Beaux-Arts de Sousse</option>
+<option value="Institut Supérieur de Transport et de la Logistique">Institut Supérieur de Transport et de la Logistique</option><option value="Institut Supérieur de Finances et de Fiscalité de Sousse">Institut Supérieur de Finances et de Fiscalité de Sousse</option><option value="Ecole Supérieure des Sciences et de La Technologie de Hammam-Sousse">Ecole Supérieure des Sciences et de La Technologie de Hammam-Sousse</option><option value="Ecole Nationale d’Ingénieurs de Sousse">Ecole Nationale d’Ingénieurs de Sousse</option><option value="Ecole Supérieure des Sciences et Techniques de la Santé de Sousse">Ecole Supérieure des Sciences et Techniques de la Santé de Sousse</option><option value="Institut Supérieur des Sciences Infirmières de Sousse">Institut Supérieur des Sciences Infirmières de Sousse</option></select><div id="field_Etablissement_chzn" class="chzn-container chzn-container-single" style="width: 549px;"><a href="javascript:void(0)" class="chzn-single chzn-default" tabindex="-1"><span>Ecole Nationale d’Ingénieurs de Sousse</span><div><b></b></div></a><div class="chzn-drop" style="left: -9000px; width: 547px; top: 25px;"><div class="chzn-search"><input type="text" autocomplete="off" style="width: 527px;"></div><ul class="chzn-results"><li id="field_Etablissement_chzn_o_1" class="active-result" style="">Faculté  de  Médecine  de  Sousse</li><li id="field_Etablissement_chzn_o_2" class="active-result" style="">Faculté de Droit et des Sciences Politiques de Sousse</li><li id="field_Etablissement_chzn_o_3" class="active-result" style="">Faculté des sciences économiques et de gestion de Sousse</li><li id="field_Etablissement_chzn_o_4" class="active-result" style="">Faculté des Lettres et des Sciences Humaines de Sousse</li><li id="field_Etablissement_chzn_o_5" class="active-result" style="">Institut Supérieur de Gestion de Sousse</li><li id="field_Etablissement_chzn_o_6" class="active-result" style="">Institut Supérieur d’Informatique et des Technologies de Communication de Sousse</li><li id="field_Etablissement_chzn_o_7" class="active-result" style="">Institut des Hautes Etudes Commerciales de Sousse</li><li id="field_Etablissement_chzn_o_8" class="active-result" style="">Institut Supérieur des Sciences Appliquées et de Technologie de Sousse</li><li id="field_Etablissement_chzn_o_9" class="active-result" style="">Institut Supérieur Agronomique de Chott-Meriem</li><li id="field_Etablissement_chzn_o_10" class="active-result" style="">Institut Supérieur de Musique de Sousse</li><li id="field_Etablissement_chzn_o_11" class="active-result" style="">Institut Supérieur des Beaux-Arts de Sousse</li><li id="field_Etablissement_chzn_o_12" class="active-result" style="">Institut Supérieur de Transport et de la Logistique</li><li id="field_Etablissement_chzn_o_13" class="active-result" style="">Institut Supérieur de Finances et de Fiscalité de Sousse</li><li id="field_Etablissement_chzn_o_14" class="active-result" style="">Ecole Supérieure des Sciences et de La Technologie de Hammam-Sousse</li><li id="field_Etablissement_chzn_o_15" class="active-result" style="">Ecole Nationale d’Ingénieurs de Sousse</li><li id="field_Etablissement_chzn_o_16" class="active-result" style="">Ecole Supérieure des Sciences et Techniques de la Santé de Sousse</li><li id="field_Etablissement_chzn_o_17" class="active-result" style="">Institut Supérieur des Sciences Infirmières de Sousse</li></ul></div></div>				</div>
+				<div class="clear"></div>
+			</div>
+            
+                 <!-------------------------------------------------------------------------------------------------->
+                            
+<div class="form-field-box odd" id="Filiere_field_box">
+				<div class="form-display-as-box" id="Filiere_display_as_box" style="color:#000000;font-size:14px;font-weight:bold;"> 
+					Filière<span>*</span> :
+				</div>
+				<div class="form-input-box" id="Filiere_input_box">
+                
+
+
+<select id="FILIERE" name="Filiere" class="datepicker-input" data-placeholder="Diplôme National d" ingénieur="" en="" electronique="" industrielle'="" required="" style="display:none">
+<option value="Diplôme National d" ingénieur="" en="" electronique="" industrielle'=""></option>
+</select>
+<input id="FILIERE1" class="form-control" name="Filiere1" type="text" value="Diplôme National d&#39;Ingénieur en Electronique Industrielle" maxlength="300">
+
+
+<!--<datalist id="FILIERE"></datalist>-->
+                    				</div>
+				<div class="clear"></div>            
+            </div>
+            
+                <!-------------------------------------------------------------------------------------------------->            
+            
+
+                
+                
+                <!-------------------------------------------------------------------------------------------------->
+                
+						<div class="form-field-box even" id="Niv_et_field_box">
+				<div class="form-display-as-box" id="Niv_et_display_as_box" style="color:#000000;font-size:14px;font-weight:bold;">
+					Niveau d'étude<span>*</span> :
+				</div>
+				<div class="form-input-box" id="Niv_et_input_box">
+					<select id="field-Niv_et" name="Niv_et" class="chosen-select chzn-done" data-placeholder="3ème année" required="" style="display: none;"><option value="3ème année"></option><option value="1ère année">1ère année</option><option value="2ème année">2ème année</option><option value="3ème année">3ème année</option><option value="4ème année">4ème année</option><option value="5ème année">5ème année</option><option value="Master1">Master1</option><option value="Master2">Master2</option><option value="Doctorat">Doctorat</option></select><div id="field_Niv_et_chzn" class="chzn-container chzn-container-single" style="width: 200px;"><a href="javascript:void(0)" class="chzn-single chzn-default" tabindex="-1"><span>3ème année</span><div><b></b></div></a><div class="chzn-drop" style="left: -9000px; width: 198px; top: 25px;"><div class="chzn-search"><input type="text" autocomplete="off" style="width: 178px;"></div><ul class="chzn-results"><li id="field_Niv_et_chzn_o_1" class="active-result" style="">1ère année</li><li id="field_Niv_et_chzn_o_2" class="active-result" style="">2ème année</li><li id="field_Niv_et_chzn_o_3" class="active-result" style="">3ème année</li><li id="field_Niv_et_chzn_o_4" class="active-result" style="">4ème année</li><li id="field_Niv_et_chzn_o_5" class="active-result" style="">5ème année</li><li id="field_Niv_et_chzn_o_6" class="active-result" style="">Master1</li><li id="field_Niv_et_chzn_o_7" class="active-result" style="">Master2</li><li id="field_Niv_et_chzn_o_8" class="active-result" style="">Doctorat</li></ul></div></div>				</div>
+				<div class="clear"></div>
+			</div>
+						
+               			<div class="form-field-box odd" id="situation_univ_field_box">
+				<div class="form-display-as-box" id="situation_univ_display_as_box" style="color:#000000;font-size:14px;font-weight:bold;">
+					Situation universitaire<span>*</span> :
+				</div>
+				<div class="form-input-box" id="situation_univ_input_box">
+					<select id="field-situation_univ" name="situation_univ" class="chosen-select chzn-done" data-placeholder="réussi" style="display: none;">
+					<option value="réussi"></option>
+					<option value="redoublant">Redoublant(e)</option>
+					<option value="réussi">Réussi(e)</option>
+					</select><div id="field_situation_univ_chzn" class="chzn-container chzn-container-single" style="width: 200px;"><a href="javascript:void(0)" class="chzn-single chzn-default" tabindex="-1"><span>réussi</span><div><b></b></div></a><div class="chzn-drop" style="left: -9000px; width: 198px; top: 25px;"><div class="chzn-search"><input type="text" autocomplete="off" style="width: 178px;"></div><ul class="chzn-results"><li id="field_situation_univ_chzn_o_1" class="active-result" style="">Redoublant(e)</li><li id="field_situation_univ_chzn_o_2" class="active-result" style="">Réussi(e)</li></ul></div></div>				</div>
+				<div class="clear"></div>
+			</div>
+         
+	
+       <div class="form-field-box even" id="Num_tel1_field_box">
+				<div class="form-display-as-box" id="Num_tel1_display_as_box" style="color:#000000;font-size:14px;font-weight:bold;">
+					Numéro de téléphone<span>*</span> :
+				</div>
+				<div class="form-input-box" id="Num_tel1_input_box">
+					<input id="field-Num_tel1" name="Num_tel1" type="text" value="55899795" class="numeric form-control" maxlength="8" required="" style="width:200px">				</div>
+				<div class="clear"></div>
+			</div>
+						<div class="form-field-box odd" id="Num_tel2_field_box">
+				<div class="form-display-as-box" id="Num_tel2_display_as_box" style="color:#000000;font-size:13px;font-weight:bold;">
+					Autre numéro de téléphone :
+				</div>
+				<div class="form-input-box" id="Num_tel2_input_box">
+					<input id="field-Num_tel2" name="Num_tel2" type="text" value="55899795" class="numeric form-control" maxlength="8" style="width:200px">				</div>
+				<div class="clear"></div>
+			</div>         
+
+
+   		<div class="form-field-box even" id="mail_office_field_box">
+				<div class="form-display-as-box" id="mail_office_display_as_box" style="color:#000000;font-size:14px;font-weight:bold;">
+					Email office 365<span></span> :
+				</div>
+				<div class="form-input-box" id="mail_office_input_box">
+					<input id="field-mail_office" class="form-control" name="mail_office" type="text" value="Samiha.boudheroua@eniso.u-sousse.tn" maxlength="100"><span> Exemple:prenom.nom@eniso.u-sousse.tn</span>					</div>
+				<div class="clear"></div>
+			</div>
+             
+             
+                
+                
+          <div class="form-field-box odd" id="Login_field_box">
+				<div class="form-display-as-box" id="Login_display_as_box" style="color:#000000;font-size:14px;font-weight:bold;">
+					Autre adresse mail<span>*</span> :
+				</div>
+				<div class="form-input-box" id="Login_input_box">
+<input id="field-Login" class="form-control" name="Login" type="text" value="ammarsamiha4@gmail.com" maxlength="100" required="">				</div>
+				<div class="clear"></div>
+			</div>
+            
+            
+            <div class="form-field-box even" id="fb_field_box">
+				<div class="form-display-as-box" id="fb_display_as_box" style="color:#000000;font-size:14px;font-weight:bold;">
+					Compte Facebook:
+				</div>
+				<div class="form-input-box" id="fb_input_box">
+					<input id="field-fb" class="form-control" name="fb" type="text" value="Samiha ammar" maxlength="200">				</div>
+				<div class="clear"></div>
+			</div>
+
+            
+            
+						<div class="form-field-box odd" id="MP_field_box">
+				<div class="form-display-as-box" id="MP_display_as_box" style="color:#000000;font-size:14px;font-weight:bold;">
+					Mot de passe<span>*</span> :
+				</div>
+				<div class="form-input-box" id="MP_input_box">
+<input id="field-MP" class="form-control" name="MP" type="text" value="Sami1995*" maxlength="30" required=""><span> NB: ce mot de passe sera utilisé pour accéder à votre espace 4C. </span>				</div>
+				<div class="clear"></div>
+			</div>      
+                
+                
+  <!----------------------------------------------------------------------------------->
+  
+  
+  
+   <!------------------------------------------------------------------>
+<div class="form-field-box even" id="handicap_field_box">
+				<div class="form-display-as-box" id="handicap_display_as_box" style="color:#000000;font-size:14px;font-weight:bold;">
+					Vivez vous avec un handicap?(physique, visuel, auditif, etc...)<span>*</span> 
+				</div>
+				<div class="form-input-box" id="handicap_input_box">
+					<select id="field-handicap" name="handicap" class="chosen-select chzn-done" data-placeholder="non" required="" style="display: none;">
+					
+					<option value="non"></option>
+					<option value="non">Non</option>
+					<option value="oui">Oui</option>
+					
+					</select><div id="field_handicap_chzn" class="chzn-container chzn-container-single" style="width: 200px;"><a href="javascript:void(0)" class="chzn-single chzn-default" tabindex="-1"><span>non</span><div><b></b></div></a><div class="chzn-drop" style="left: -9000px; width: 198px; top: 25px;"><div class="chzn-search"><input type="text" autocomplete="off" style="width: 178px;"></div><ul class="chzn-results"><li id="field_handicap_chzn_o_1" class="active-result" style="">Non</li><li id="field_handicap_chzn_o_2" class="active-result" style="">Oui</li></ul></div></div>				</div>
+				<div class="clear"></div>
+			</div>
+						
+ <!------------------------------------------------------------------>
+<div class="form-field-box odd" id="type_handicap_field_box">
+				<div class="form-display-as-box" id="type_handicap_display_as_box" style="color:#000000;font-size:14px;font-weight:bold;">
+					Si oui, quel type d'handicap?
+				</div>
+				<div class="form-input-box" id="type_handicap_input_box">
+					<input id="field-type_handicap" class="form-control" name="type_handicap" type="text" value="" maxlength="500">				</div>
+				<div class="clear"></div>
+			</div>
+  
+  
+  
+  
+  
+    <!-----------------------------COVID---------------------------------------------  
+
+<div class='form-field-box even' id="covid_field_box">
+				<div class='form-display-as-box' id="covid_display_as_box" style="color:#000000;font-size:14px;font-weight:bold;">
+					Avez vous eu un vaccin anti-covid?<span>*</span> :
+				</div>
+				<div class='form-input-box' id="covid_input_box">
+					<select id='field-covid' name='covid' class='chosen-select' data-placeholder='oui'>
+					<option value='oui'  ></option>
+					<option value='oui'  >oui</option>
+					<option value='non'  >non</option>
+					</select>				</div>
+				<div class='clear'></div>
+			</div>
+						<div class='form-field-box odd' id="date_vac_field_box">
+				<div class='form-display-as-box' id="date_vac_display_as_box" style="color:#000000;font-size:14px;font-weight:bold;">
+					Date de vaccination :
+				</div>
+				<div class='form-input-box' id="date_vac_input_box">
+					<input id='field-date_vac' name='date_vac' type='date' value='0000-00-00' maxlength='10' class='datepicker-input form-control' />
+		<a class='datepicker-input-clear' tabindex='-1'>Initialiser</a> (jj/mm/aaaa)				</div>
+				<div class='clear'></div>
+			</div>
+						<div class='form-field-box even' id="type_vacc_field_box">
+				<div class='form-display-as-box' id="type_vacc_display_as_box" style="color:#000000;font-size:14px;font-weight:bold;">
+					Type de vaccination :
+				</div>
+				<div class='form-input-box' id="type_vacc_input_box">
+					<select id='field-type_vacc' name='type_vacc' class='chosen-select' data-placeholder='Pfizer–BioNTech'>
+					<option value='Pfizer–BioNTech'></option>
+					<option value='Pfizer–BioNTech'  >Pfizer–BioNTech</option>
+					<option value='Moderna'  >Moderna</option>
+					<option value='AstraZeneca'  >AstraZeneca</option>
+					<option value='Janssen'  >Janssen</option>
+					<option value='Sinopharm'  >Sinopharm</option>
+					<option value='Sinovac'  >Sinovac</option>
+					
+					
+					</select>				</div>
+				<div class='clear'></div>
+			</div>
+
+<div class='form-field-box odd' id="nb_dose_field_box">
+				<div class='form-display-as-box' id="nb_dose_display_as_box" style="color:#000000;font-size:14px;font-weight:bold;">
+					Nombre de doses :
+				</div>
+				<div class='form-input-box' id="nb_dose_input_box">
+					<select id='field-nb_dose' name='nb_dose' class='chosen-select' data-placeholder='1'>
+					<option value='1'  ></option>
+					<option value='1'  >1</option>
+					<option value='2'  >2</option>
+					<option value='3'  >3</option>
+					<option value='4'  >4</option>
+					<option value='5'  >5</option>
+					
+					</select>				</div>
+				<div class='clear'></div>
+			</div>
+------------------------------------------------------------------------------------------------------>	
+  
+       
+			<!-------------------------------------------->
+			
+			<!-------------------------------------------->
+		
+<!---------------------------------------------------------------------------->			   
+                
+                
+                
+                
+			
+						<!-- Start of hidden inputs -->
+							<!-- End of hidden inputs -->
+						<div class="line-1px"></div>
+			<div id="report-error" class="report-div error"></div>
+			<div id="report-success" class="report-div success"></div>
+		</div>
+		<div class="buttons-box">
+			<div class="form-button-box">
+				<input id="form-button-save" type="submit" value="Sauvegarder les modifications" class="ui-input-button ui-button ui-widget ui-state-default ui-corner-all" role="button" aria-disabled="false">
+			</div>
+			<div class="form-button-box">
+				
+			</div>
+			<div class="form-button-box">
+				<input type="button" value="Imprimer" class="ui-input-button ui-button ui-widget ui-state-default ui-corner-all" id="cancel-button" role="button" aria-disabled="false"> <span href="#" style="color:#CC0033;">Remarque: le lien d'inscription obligatoire à la plateforme 4C.tn est www.4c.tn.</span>
+			</div>
+            
+
+			<div class="form-button-box loading-box">
+				<div class="small-loading" id="FormLoading">En attente, entregistrement des données...</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</form></div>
+</div>
+
+<script>
+	var validation_url = 'http://www.services.uc.rnu.tn/4C/index.php/etudiant/etudiant_manager/insert_validation';
+	var list_url = 'javascript:popup()';
+
+	var message_alert_add_form = "En cas de modification d'un ou plusieurs champs, veuillez enregistrer toutes les modifications avant de lancer l'impression";
+	var message_insert_error = "Une erreur est survenue lors de l'opération d'insertion.";
+</script><script type="text/javascript">
+var js_date_format = 'dd/mm/yy';
+</script>
+
+	
+<script type="text/javascript">
+	var default_javascript_path = 'http://www.services.uc.rnu.tn/4C/assets/grocery_crud/js';
+	var default_css_path = 'http://www.services.uc.rnu.tn/4C/assets/grocery_crud/css';
+	var default_texteditor_path = 'http://www.services.uc.rnu.tn/4C/assets/grocery_crud/texteditor';
+	var default_theme_path = 'http://www.services.uc.rnu.tn/4C/assets/grocery_crud/themes';
+	var base_url = 'http://www.services.uc.rnu.tn/4C/';
+
+</script>
+<script type="text/javascript"> 
+function changerBCCH(){ 
+document.getElementById('FILIERE1').style.display='none';
+document.getElementById('FILIERE').style.display='table'; 
+ var inputBox = document.getElementById('Filiere_input_box');
+ var selectbox = document.getElementById('FILIERE');
+ //inputBox.setAttribute('style', '');
+
+
+
+
+
+//document.getElementById("FILIERE").style.display = "none";
+//document.getElementById('FILIERE').style.visibility="inherit";
+
+//document.getElementById('FILIERE').type = 'password';
+var type = document.getElementById('field-Etablissement').options[document.getElementById('field-Etablissement').selectedIndex].value; 
+var valeur; 
+switch (type) {
+   
+case 'Ecole Supérieure des Sciences et Techniques de la Santé de Sousse':
+selectbox.options[0]= new Option("Licence en Urgence et Réanimation","Licence en Urgence et Réanimation");	
+selectbox.options[1]= new Option("Licence en Puériculture","Licence en Puériculture");	
+selectbox.options[2]= new Option("Licence en Podologie et Pédicurie","Licence en Podologie et Pédicurie");	
+selectbox.options[3]= new Option("Licence en Instrumentation Opératoire","Licence en Instrumentation Opératoire");	
+selectbox.options[4]= new Option("Mastère de Recherche en Sciences de la Santé","Mastère de Recherche en Sciences de la Santé");	
+selectbox.options[5]= new Option("Autre","Autre");
+selectbox.options[6]= new Option("","");
+selectbox.options[7]= new Option("","");
+selectbox.options[8]= new Option("","");
+selectbox.options[9]= new Option("","");
+selectbox.options[10]= new Option("","");
+selectbox.options[11]= new Option("","");
+selectbox.options[12]= new Option("","");
+selectbox.options[13]= new Option("","");
+selectbox.options[14]= new Option("","");
+selectbox.options[15]= new Option("","");
+selectbox.options[16]= new Option("","");
+selectbox.options[17]= new Option("","");
+selectbox.options[18]= new Option("","");
+selectbox.options[19]= new Option("","");
+selectbox.options[20]= new Option("","");
+selectbox.options[21]= new Option("","");
+selectbox.options[22]= new Option("","");
+break; 
+
+case 'Ecole Supérieure des Sciences et de La Technologie de Hammam-Sousse':
+selectbox.options[0]= new Option("Licence en Chimie","Licence en Chimie");	
+selectbox.options[1]= new Option("Licence en Mathématiques","Licence en Mathématiques");		
+selectbox.options[2]= new Option("Licence en Physique","Licence en Physique");	
+selectbox.options[3]= new Option("Licence en Physique et Energie","Licence en Physique et Energie");	
+selectbox.options[4]= new Option("Licence en Science de l’Informatique -Computer Science-","Licence en Science de l’Informatique -Computer Science-");	
+selectbox.options[5]= new Option("Licence en Electronique, Electrotechnique et Automatique","Licence en Electronique, Electrotechnique et Automatique");		
+selectbox.options[6]= new Option("Licence Co-Construite en Electronique, Electrotechnique et Automatique","Licence Co-Construite en Electronique, Electrotechnique et Automatique");	
+selectbox.options[7]= new Option("Cycle Préparatoire Scientifique: Physique-Chimie","Cycle Préparatoire Scientifique: Physique-Chimie");	
+selectbox.options[8]= new Option("Cycle Préparatoire Scientifique: Mathématiques - Physique","Cycle Préparatoire Scientifique: Mathématiques - Physique");	
+selectbox.options[9]= new Option("Doctorat en Mathématiques","Doctorat en Mathématiques");	
+selectbox.options[10]= new Option("Doctorat en Génie Physique","Doctorat en Génie Physique");	
+selectbox.options[11]= new Option("Mastère de Recherche en Mathématiques","Mastère de Recherche en Mathématiques");	
+selectbox.options[12]= new Option("Mastère de Recherche en Physique des Matériaux","Mastère de Recherche en Physique des Matériaux");	
+selectbox.options[13]= new Option("Mastère de Recherche en Physique","Mastère de Recherche en Physique");	
+selectbox.options[14]= new Option("Mastère Professionnel en Systèmes Electroniques Embarqués et Equipements Médicaux","Mastère Professionnel en Systèmes Electroniques Embarqués et Equipements Médicaux");	
+selectbox.options[15]= new Option("Mastère Professionnel en Sciences et Technologie de l'Information et de la Communication","Mastère Professionnel en Sciences et Technologie de l'Information et de la Communication");	
+selectbox.options[16]= new Option("Mastère Professionnel en Efficacité énergétique dans le bâtiment","Mastère Professionnel en Efficacité énergétique dans le bâtiment");	
+selectbox.options[17]= new Option("Autre","Autre");
+selectbox.options[18]= new Option("","");
+selectbox.options[19]= new Option("","");
+selectbox.options[20]= new Option("","");
+selectbox.options[21]= new Option("","");
+selectbox.options[22]= new Option("","");
+break; 
+
+case 'Ecole Nationale d’Ingénieurs de Sousse':
+selectbox.options[0]= new Option("Diplôme National d'Ingénieur en Informatique Appliquée","Diplôme National d'Ingénieur en Informatique Appliquée");	
+selectbox.options[1]= new Option("Diplôme National d'Ingénieur en Electronique Industrielle","Diplôme National d'Ingénieur en Electronique Industrielle");	
+selectbox.options[2]= new Option("Diplôme National d'Ingénieur en Mécatronique","Diplôme National d'Ingénieur en Mécatronique");	
+selectbox.options[3]= new Option("Diplôme National d'Ingénieur en Génie Mécanique et Productique","Diplôme National d'Ingénieur en Génie Mécanique et Productique");	
+selectbox.options[4]= new Option("Diplôme National d'Ingénieur en Génie de Télécommunications Embarquées","Diplôme National d'Ingénieur en Génie de Télécommunications Embarquées");	
+selectbox.options[5]= new Option("Doctorat en Génie Electrique","Doctorat en Génie Electrique");	
+selectbox.options[6]= new Option("Doctorat en Génie Mécanique","Doctorat en Génie Mécanique");	
+selectbox.options[7]= new Option("Mastère Professionnel en Génie Mécanique","Mastère Professionnel en Génie Mécanique");	
+selectbox.options[8]= new Option("Autre","Autre");
+selectbox.options[9]= new Option("","");
+selectbox.options[10]= new Option("","");
+selectbox.options[11]= new Option("","");
+selectbox.options[12]= new Option("","");
+selectbox.options[13]= new Option("","");
+selectbox.options[14]= new Option("","");
+selectbox.options[15]= new Option("","");
+selectbox.options[16]= new Option("","");
+selectbox.options[17]= new Option("","");
+selectbox.options[18]= new Option("","");
+selectbox.options[19]= new Option("","");
+selectbox.options[20]= new Option("","");
+selectbox.options[21]= new Option("","");
+selectbox.options[22]= new Option("","");
+break; 
+
+case 'Institut Supérieur des Sciences Infirmières de Sousse':
+selectbox.options[0]= new Option("Licence en Sciences Infirmières","Licence en Sciences Infirmières");	
+selectbox.options[1]= new Option("Autre","Autre");
+selectbox.options[2]= new Option("","");
+selectbox.options[3]= new Option("","");
+selectbox.options[4]= new Option("","");
+selectbox.options[5]= new Option("","");
+selectbox.options[6]= new Option("","");
+selectbox.options[7]= new Option("","");
+selectbox.options[8]= new Option("","");
+selectbox.options[9]= new Option("","");
+selectbox.options[10]= new Option("","");
+selectbox.options[11]= new Option("","");
+selectbox.options[12]= new Option("","");
+selectbox.options[13]= new Option("","");
+selectbox.options[14]= new Option("","");
+selectbox.options[15]= new Option("","");
+selectbox.options[16]= new Option("","");
+selectbox.options[17]= new Option("","");
+selectbox.options[18]= new Option("","");
+selectbox.options[19]= new Option("","");
+selectbox.options[20]= new Option("","");
+selectbox.options[21]= new Option("","");
+selectbox.options[22]= new Option("","");
+break; 
+
+case 'Institut Supérieur d’Informatique et des Technologies de Communication de Sousse':
+selectbox.options[0]= new Option("Licence en Science de l’Informatique -Computer Science-","Licence en Science de l’Informatique -Computer Science-");	
+selectbox.options[1]= new Option("Licence en Ingénierie des Systèmes Informatiques -Computer Engineering-","Licence en Ingénierie des Systèmes Informatiques -Computer Engineering-");
+selectbox.options[2]= new Option("Licence en Technologies de l’Information et de la Communication","Licence en Technologies de l’Information et de la Communication");
+selectbox.options[3]= new Option("Diplôme National d'Ingénieur en Sciences Appliquées et Technologie: Informatique","Diplôme National d'Ingénieur en Sciences Appliquées et Technologie: Informatique");
+selectbox.options[4]= new Option("Doctorat en Sciences de l'Informatique","Doctorat en Sciences de l'Informatique");	
+selectbox.options[5]= new Option("Mastère de Recherche en Informatique Distribuée","Mastère de Recherche en Informatique Distribuée");	
+selectbox.options[6]= new Option("Mastère Professionnel en Services et Sécurité des Réseaux","Mastère Professionnel en Services et Sécurité des Réseaux");	
+selectbox.options[7]= new Option("Mastère Professionnel en Sciences et Technologies de l'Information et de la Communication","Mastère Professionnel en Sciences et Technologies de l'Information et de la Communication");	
+selectbox.options[8]= new Option("Mastère Professionnel Co-Construit en Systèmes, Services et Applications pour l’Internet des Objets","Mastère Professionnel Co-Construit en Systèmes, Services et Applications pour l’Internet des Objets");	
+selectbox.options[9]= new Option("Autre","Autre");
+selectbox.options[10]= new Option("","");
+selectbox.options[11]= new Option("","");
+selectbox.options[12]= new Option("","");
+selectbox.options[13]= new Option("","");
+selectbox.options[14]= new Option("","");
+selectbox.options[15]= new Option("","");
+selectbox.options[16]= new Option("","");
+selectbox.options[17]= new Option("","");
+selectbox.options[18]= new Option("","");
+selectbox.options[19]= new Option("","");
+selectbox.options[20]= new Option("","");
+selectbox.options[21]= new Option("","");
+selectbox.options[22]= new Option("","");
+break; 
+
+case 'Institut Supérieur de Gestion de Sousse':
+selectbox.options[0]= new Option("Licence en Sciences Economiques","Licence en Sciences Economiques");	
+selectbox.options[1]= new Option("Licence en Sciences de Gestion","Licence en Sciences de Gestion");		
+selectbox.options[2]= new Option("Licence en Informatique de Gestion -Business Computing-","Licence en Informatique de Gestion -Business Computing-");
+selectbox.options[3]= new Option("Mastère de Recherche en Systèmes d'Information et Aide à la Décision","Mastère de Recherche en Systèmes d'Information et Aide à la Décision");	
+selectbox.options[4]= new Option("Mastère de Recherche en Marketing","Mastère de Recherche en Marketing");	
+selectbox.options[5]= new Option("Mastère de Recherche en Comptabilité","Mastère de Recherche en Comptabilité");	
+selectbox.options[6]= new Option("Mastère de Recherche en Finance","Mastère de Recherche en Finance");
+selectbox.options[7]= new Option("Mastère Professionnel en Marketing","Mastère Professionnel en Marketing");	
+selectbox.options[8]= new Option("Mastère Professionnel en Comptabilité","Mastère Professionnel en Comptabilité");	
+selectbox.options[9]= new Option("Mastère Professionnel en Management","Mastère Professionnel en Management");	
+selectbox.options[10]= new Option("Mastère Professionnel en Finance","Mastère Professionnel en Finance");	
+selectbox.options[11]= new Option("Mastère Professionnel Co-Construit en Gestion Hôtelière et Touristique","Mastère Professionnel Co-Construit en Gestion Hôtelière et Touristique");	
+selectbox.options[12]= new Option("Mastère Professionnel Co-Construit en Ingénierie Financière","Mastère Professionnel Co-Construit en Ingénierie Financière");	
+selectbox.options[13]= new Option("Mastère Professionnel Co-construit en Finance","Mastère Professionnel Co-construit en Finance");	
+selectbox.options[14]= new Option("Mastère Professionnel Co-construit en Management","Mastère Professionnel Co-construit en Management");	
+selectbox.options[15]= new Option("Autre","Autre");	
+selectbox.options[16]= new Option("","");
+selectbox.options[17]= new Option("","");
+selectbox.options[18]= new Option("","");
+selectbox.options[19]= new Option("","");
+selectbox.options[20]= new Option("","");
+selectbox.options[21]= new Option("","");
+selectbox.options[22]= new Option("","");
+break; 
+
+ case 'Institut Supérieur des Sciences Appliquées et de Technologie de Sousse':
+selectbox.options[0]= new Option("Licence en Science de l’Informatique -Computer Science-","Licence en Science de l’Informatique -Computer Science-");	
+selectbox.options[1]= new Option("Licence en Ingénierie des Systèmes Informatiques -Computer Engineering-","Licence en Ingénierie des Systèmes Informatiques -Computer Engineering-");
+selectbox.options[2]= new Option("Licence en Electronique, Electrotechnique et Automatique","Licence en Electronique, Electrotechnique et Automatique");		
+selectbox.options[3]= new Option("Licence en Electromécanique","Licence en Electromécanique");	
+selectbox.options[4]= new Option("Licence en Génie Mécanique","Licence en Génie Mécanique");	
+selectbox.options[5]= new Option("Licence en Génie Energétique","Licence en Génie Energétique");	
+selectbox.options[6]= new Option("Licence en Génie Civil","Licence en Génie Civil");	
+selectbox.options[7]= new Option("Diplôme National d'Ingénieur en Sciences Appliquées et Technologie: Informatique","Diplôme National d'Ingénieur en Sciences Appliquées et Technologie: Informatique");		
+selectbox.options[8]= new Option("Cycle Préparatoire Intégré- Scientifique","Cycle Préparatoire Intégré- Scientifique");	
+selectbox.options[9]= new Option("Mastère de Recherche en Science de l'informatique (Computer Science)","Mastère de Recherche en Science de l'informatique (Computer Science)");	
+selectbox.options[10]= new Option("Mastère de Recherche en Microsystèmes et Electronique Embarquée","Mastère de Recherche en Microsystèmes et Electronique Embarquée");
+selectbox.options[11]= new Option("Mastère de Recherche en Génie Mécanique","Mastère de Recherche en Génie Mécanique");	
+selectbox.options[12]= new Option("Mastère Professionnel en Génie Energétique","Mastère Professionnel en Génie Energétique");	
+selectbox.options[13]= new Option("Autre","Autre");
+selectbox.options[14]= new Option("","");
+selectbox.options[15]= new Option("","");
+selectbox.options[16]= new Option("","");
+selectbox.options[17]= new Option("","");
+selectbox.options[18]= new Option("","");
+selectbox.options[19]= new Option("","");
+selectbox.options[20]= new Option("","");
+selectbox.options[21]= new Option("","");
+selectbox.options[22]= new Option("","");
+break; 
+
+case 'Institut Supérieur Agronomique de Chott-Meriem':
+selectbox.options[0]= new Option("Licence en Agronomie","Licence en Agronomie");		
+selectbox.options[1]= new Option("Diplôme National d'Ingénieur en Production Animale","Diplôme National d'Ingénieur en Production Animale");	
+selectbox.options[2]= new Option("Diplôme National d'Ingénieur en Aménagement du Paysage","Diplôme National d'Ingénieur en Aménagement du Paysage");	
+selectbox.options[3]= new Option("Diplôme National d'Ingénieur en Horticulture","Diplôme National d'Ingénieur en Horticulture");		
+selectbox.options[4]= new Option("Diplôme National d'Ingénieur en Génie des Systèmes Horticoles","Diplôme National d'Ingénieur en Génie des Systèmes Horticoles");	
+selectbox.options[5]= new Option("Doctorat en Sciences agronomiques et environnement","Doctorat en Sciences agronomiques et environnement");	
+selectbox.options[6]= new Option("Mastère de Recherche en Sciences Agronomiques et Environnement","Mastère de Recherche en Sciences Agronomiques et Environnement");		
+selectbox.options[7]= new Option("Mastère Professionnel en Gestion du Changement Environnemental Méditerranéen et Agriculture durable","Mastère Professionnel en Gestion du Changement Environnemental Méditerranéen et Agriculture durable");
+selectbox.options[8]= new Option("Mastère Professionnel en Agronomie","Mastère Professionnel en Agronomie");	
+selectbox.options[9]= new Option("Mastère Professionnel Co-Construit en Agriculture","Mastère Professionnel Co-Construit en Agriculture");	
+selectbox.options[10]= new Option("Autre","Autre");
+selectbox.options[11]= new Option("","");
+selectbox.options[12]= new Option("","");
+selectbox.options[13]= new Option("","");
+selectbox.options[14]= new Option("","");
+selectbox.options[15]= new Option("","");
+selectbox.options[16]= new Option("","");
+selectbox.options[17]= new Option("","");
+selectbox.options[18]= new Option("","");
+selectbox.options[19]= new Option("","");
+selectbox.options[20]= new Option("","");
+selectbox.options[21]= new Option("","");
+selectbox.options[22]= new Option("","");
+break; 
+
+case 'Institut Supérieur des Beaux-Arts de Sousse':
+selectbox.options[0]= new Option("Licence en Arts Plastiques","Licence en Arts Plastiques");		
+selectbox.options[1]= new Option("Licence en Design Image","Licence en Design Image");	
+selectbox.options[2]= new Option("Licence en Design Espace","Licence en Design Espace");	
+selectbox.options[3]= new Option("Licence en Design Produit","Licence en Design Produit");	
+selectbox.options[4]= new Option("Licence en Conservation- Restauration des Biens Culturels","Licence en Conservation- Restauration des Biens Culturels");	
+selectbox.options[5]= new Option("Doctorat en Esthétiques et Pratiques des Arts","Doctorat en Esthétiques et Pratiques des Arts");		
+selectbox.options[6]= new Option("Mastère de Recherche en Design","Mastère de Recherche en Design");	
+selectbox.options[7]= new Option("Mastère de Recherche en Arts plastiques","Mastère de Recherche en Arts plastiques");	
+selectbox.options[8]= new Option("Mastère Professionnel en Art et Médiation","Mastère Professionnel en Art et Médiation");	
+selectbox.options[9]= new Option("Mastère Professionnel en Design Produit","Mastère Professionnel en Design Produit");	
+selectbox.options[10]= new Option("Mastère Professionnel en Design Espace","Mastère Professionnel en Design Espace");	
+selectbox.options[11]= new Option("Mastère Professionnel en Design Image","Mastère Professionnel en Design Image");	
+selectbox.options[12]= new Option("Mastère Professionnel en Arts Plastiques","Mastère Professionnel en Arts Plastiques");		
+selectbox.options[13]= new Option("Autre","Autre");
+selectbox.options[14]= new Option("","");
+selectbox.options[15]= new Option("","");
+selectbox.options[16]= new Option("","");
+selectbox.options[17]= new Option("","");
+selectbox.options[18]= new Option("","");
+selectbox.options[19]= new Option("","");
+selectbox.options[20]= new Option("","");
+selectbox.options[21]= new Option("","");
+selectbox.options[22]= new Option("","");
+break; 
+
+case 'Institut Supérieur de Finances et de Fiscalité de Sousse':
+selectbox.options[0]= new Option("Licence en Sciences Economiques","Licence en Sciences Economiques");	
+selectbox.options[1]= new Option("Licence en Sciences de Gestion","Licence en Sciences de Gestion");
+selectbox.options[2]= new Option("Mastère de Recherche en Economie et finance internationales","Mastère de Recherche en Economie et finance internationales");	
+selectbox.options[3]= new Option("Mastère Professionnel en Finance","Mastère Professionnel en Finance");	
+selectbox.options[4]= new Option("Mastère Professionnel en Comptabilité","Mastère Professionnel en Comptabilité");	
+selectbox.options[5]= new Option("Mastère de Recherche en Finance","Mastère de Recherche en Finance");	
+selectbox.options[6]= new Option("Autre","Autre");
+selectbox.options[7]= new Option("","");
+selectbox.options[8]= new Option("","");
+selectbox.options[9]= new Option("","");
+selectbox.options[10]= new Option("","");
+selectbox.options[11]= new Option("","");
+selectbox.options[12]= new Option("","");
+selectbox.options[13]= new Option("","");
+selectbox.options[14]= new Option("","");
+selectbox.options[15]= new Option("","");
+selectbox.options[16]= new Option("","");
+selectbox.options[17]= new Option("","");
+selectbox.options[18]= new Option("","");
+selectbox.options[19]= new Option("","");
+selectbox.options[20]= new Option("","");
+selectbox.options[21]= new Option("","");
+selectbox.options[22]= new Option("","");
+break; 
+
+case 'Institut Supérieur de Musique de Sousse':
+selectbox.options[0]= new Option("Licence en Musique et Musicologie","Licence en Musique et Musicologie");	
+selectbox.options[1]= new Option("Licence en Ingénierie et Techniques du Son","Licence en Ingénierie et Techniques du Son");	
+selectbox.options[2]= new Option("Mastère de Recherche en Musique et Musicologie","Mastère de Recherche en Musique et Musicologie");	
+selectbox.options[3]= new Option("Mastère Professionnel Co-Construit en Musicothérapie","Mastère Professionnel Co-Construit en Musicothérapie");	
+selectbox.options[4]= new Option("Autre","Autre");
+selectbox.options[5]= new Option("","");
+selectbox.options[6]= new Option("","");
+selectbox.options[7]= new Option("","");
+selectbox.options[8]= new Option("","");
+selectbox.options[9]= new Option("","");
+selectbox.options[10]= new Option("","");
+selectbox.options[11]= new Option("","");
+selectbox.options[12]= new Option("","");
+selectbox.options[13]= new Option("","");
+selectbox.options[14]= new Option("","");
+selectbox.options[15]= new Option("","");
+selectbox.options[16]= new Option("","");
+selectbox.options[17]= new Option("","");
+selectbox.options[18]= new Option("","");
+selectbox.options[19]= new Option("","");
+selectbox.options[20]= new Option("","");
+selectbox.options[21]= new Option("","");
+selectbox.options[22]= new Option("","");
+break; 
+
+case 'Institut Supérieur de Transport et de la Logistique':
+selectbox.options[0]= new Option("Licence en Génie Logistique","Licence en Génie Logistique");	
+selectbox.options[1]= new Option("Licence en Technologie et Ingénierie du Transport","Licence en Technologie et Ingénierie du Transport");		
+selectbox.options[2]= new Option("Licence en Sciences du Transport","Licence en Sciences du Transport");		
+selectbox.options[3]= new Option("Mastère de Recherche en Sciences et Ingénierie du Transport et de la Logistique (SITL)","Mastère de Recherche en Sciences et Ingénierie du Transport et de la Logistique (SITL)");	
+selectbox.options[4]= new Option("Mastère Professionnel en Management des Affaires Maritimes (MAM)","Mastère Professionnel en Management des Affaires Maritimes (MAM)");	
+selectbox.options[5]= new Option("Mastère Professionnel en Ingénierie du Transport et de la Logistique","Mastère Professionnel en Ingénierie du Transport et de la Logistique");	
+selectbox.options[6]= new Option("Autre","Autre");
+selectbox.options[7]= new Option("","");
+selectbox.options[8]= new Option("","");
+selectbox.options[9]= new Option("","");
+selectbox.options[10]= new Option("","");
+selectbox.options[11]= new Option("","");
+selectbox.options[12]= new Option("","");
+selectbox.options[13]= new Option("","");
+selectbox.options[14]= new Option("","");
+selectbox.options[15]= new Option("","");
+selectbox.options[16]= new Option("","");
+selectbox.options[17]= new Option("","");
+selectbox.options[18]= new Option("","");
+selectbox.options[19]= new Option("","");
+selectbox.options[20]= new Option("","");
+selectbox.options[21]= new Option("","");
+selectbox.options[22]= new Option("","");
+break; 
+
+case 'Faculté des Lettres et des Sciences Humaines de Sousse':
+selectbox.options[0]= new Option("Licence en Arabe","Licence en Arabe");	
+selectbox.options[1]= new Option("Licence en Français","Licence en Français");	
+selectbox.options[2]= new Option("Licence en Anglais","Licence en Anglais");	
+selectbox.options[3]= new Option("Licence en Anthropologie","Licence en Anthropologie");	
+selectbox.options[4]= new Option("Licence en Histoire","Licence en Histoire");	
+selectbox.options[5]= new Option("Licence en Géographie","Licence en Géographie");		
+selectbox.options[6]= new Option("Doctorat en  Langue, Littérature et Civilisation Anglaises","Doctorat en  Langue, Littérature et Civilisation Anglaises");
+selectbox.options[7]= new Option("Doctorat en Histoire, Archéologie et Sciences du patrimoine","Doctorat en Histoire, Archéologie et Sciences du patrimoine");	
+selectbox.options[8]= new Option("Doctorat en Langue, Littératures et Civilisation Arabes","Doctorat en Langue, Littératures et Civilisation Arabes");	
+selectbox.options[9]= new Option("Doctorat en Langue, littérature et civilisation françaises","Doctorat en Langue, littérature et civilisation françaises");	
+selectbox.options[10]= new Option("Mastère de Recherche en Histoire des Religions","Mastère de Recherche en Histoire des Religions");	
+selectbox.options[11]= new Option("Mastère de Recherche en Géographie","Mastère de Recherche en Géographie");	
+selectbox.options[12]= new Option("Mastère de Recherche en Langue, Littératures et Civilisation Anglaises","Mastère de Recherche en Langue, Littératures et Civilisation Anglaises");	
+selectbox.options[13]= new Option("Mastère de Recherche en Histoire du Maghreb et ses Civilisations","Mastère de Recherche en Histoire du Maghreb et ses Civilisations");	
+selectbox.options[14]= new Option("Mastère de Recherche en Langue, Littérature et Civilisation Arabes","Mastère de Recherche en Langue, Littérature et Civilisation Arabes");	
+selectbox.options[15]= new Option("Mastère de Recherche en Langue, Littérature et Civilisation Françaises","Mastère de Recherche en Langue, Littérature et Civilisation Françaises");	
+selectbox.options[16]= new Option("Mastère de Recherche en Etudes Africaines","Mastère de Recherche en Etudes Africaines");	
+selectbox.options[17]= new Option("Mastère Professionnel en Histoire et archéologie","Mastère Professionnel en Histoire et archéologie");	
+selectbox.options[18]= new Option("Autre","Autre");
+selectbox.options[19]= new Option("","");
+selectbox.options[20]= new Option("","");
+selectbox.options[21]= new Option("","");
+selectbox.options[22]= new Option("","");
+break; 
+
+case 'Faculté de Droit et des Sciences Politiques de Sousse':
+selectbox.options[0]= new Option("Licence en Droit","Licence en Droit");		
+selectbox.options[1]= new Option("Doctorat en Droit Privé","Doctorat en Droit Privé");	
+selectbox.options[2]= new Option("Doctorat Sciences Politiques","Doctorat Sciences Politiques");	
+selectbox.options[3]= new Option("Doctorat en Droit Public","Doctorat en Droit Public");	
+selectbox.options[4]= new Option("Mastère de Recherche en Droit Privé","Mastère de Recherche en Droit Privé");	
+selectbox.options[5]= new Option("Mastère de Recherche en Droit Public","Mastère de Recherche en Droit Public");	
+selectbox.options[6]= new Option("Mastère de Recherche en Sciences Politiques","Mastère de Recherche en Sciences Politiques");	
+selectbox.options[7]= new Option("Mastère de Recherche en Genre, Sciences politiques, Juridiques et Humanités","Mastère de Recherche en Genre, Sciences politiques, Juridiques et Humanités");	
+selectbox.options[8]= new Option("Mastère Professionnel en Droit Judiciaire Privé","Mastère Professionnel en Droit Judiciaire Privé");	
+selectbox.options[9]= new Option("Mastère Professionnel en Droit de l'Entreprise et des Affaires","Mastère Professionnel en Droit de l'Entreprise et des Affaires");	
+selectbox.options[10]= new Option("Mastère Professionnel en Droit des Collectivités Locales","Mastère Professionnel en Droit des Collectivités Locales");	
+selectbox.options[11]= new Option("Autre","Autre");
+selectbox.options[12]= new Option("","");
+selectbox.options[13]= new Option("","");
+selectbox.options[14]= new Option("","");
+selectbox.options[15]= new Option("","");
+selectbox.options[16]= new Option("","");
+selectbox.options[17]= new Option("","");
+selectbox.options[18]= new Option("","");
+selectbox.options[19]= new Option("","");
+selectbox.options[20]= new Option("","");
+selectbox.options[21]= new Option("","");
+selectbox.options[22]= new Option("","");
+break; 
+
+case 'Faculté  de  Médecine  de  Sousse':
+selectbox.options[0]= new Option("Doctorat en Sciences de la Santé","Doctorat en Sciences de la Santé");	
+selectbox.options[1]= new Option("Médecine:Spécialisation en Médecine (troisième cycle: Baccalauréat + 9 ou 10 ou 11)","Médecine:Spécialisation en Médecine (troisième cycle: Baccalauréat + 9 ou 10 ou 11)");	
+selectbox.options[2]= new Option("Médecine:Etudes Fondamentales en Médecine","Médecine:Etudes Fondamentales en Médecine"); 	
+selectbox.options[3]= new Option("Médecine:Etudes Cliniques en Médecine","Médecine:Etudes Cliniques en Médecine");	
+selectbox.options[4]= new Option("Médecine(Deuxième cycle + 1 + Thèse de doctorat en médecine)","Médecine(Deuxième cycle + 1 + Thèse de doctorat en médecine)");	
+selectbox.options[5]= new Option("Mastère de Recherche en Génétique, immunologie et nouvelles technologies appliquées à la médecine moléculaire","Mastère de Recherche en Génétique, immunologie et nouvelles technologies appliquées à la médecine moléculaire");
+selectbox.options[6]= new Option("Mastère Professionnel en Médecine du sport","Mastère Professionnel en Médecine du sport");	
+selectbox.options[7]= new Option("Mastère Professionnel en maladies respiratoires Professionnelles et de l'environnement","Mastère Professionnel en maladies respiratoires Professionnelles et de l'environnement");	
+selectbox.options[8]= new Option("Mastère Professionnel en Dermatologie Esthétique, Cosmétologie et Laser","Mastère Professionnel en Dermatologie Esthétique, Cosmétologie et Laser");	
+selectbox.options[9]= new Option("Mastère Professionnel en Sexologie Clinique","Mastère Professionnel en Sexologie Clinique");	
+selectbox.options[10]= new Option("Mastère Professionnel en Cardiologie Congénitale et Pédiatrique","Mastère Professionnel en Cardiologie Congénitale et Pédiatrique");	
+selectbox.options[11]= new Option("Mastère Professionnel en Homéopathie","Mastère Professionnel en Homéopathie");	
+selectbox.options[12]= new Option("Mastère Professionnel en Informatique Médicale","Mastère Professionnel en Informatique Médicale");	
+selectbox.options[13]= new Option("Mastère Professionnel en Ventilation non Invasive de l’hôpital au domicile","Mastère Professionnel en Ventilation non Invasive de l’hôpital au domicile");	
+selectbox.options[14]= new Option("Mastère Professionnel en Médecine de Famille","Mastère Professionnel en Médecine de Famille");	
+selectbox.options[15]= new Option("Mastère Professionnel en Hygiène Hospitalière","Mastère Professionnel en Hygiène Hospitalière");
+selectbox.options[16]= new Option("Mastère Professionnel en Qualité des soins et Management des services de santé","Mastère Professionnel en Qualité des soins et Management des services de santé");	
+selectbox.options[17]= new Option("Mastère Professionnel en Dermatologie Professionnelle et de l’Environnement","Mastère Professionnel en Dermatologie Professionnelle et de l’Environnement");	
+selectbox.options[18]= new Option("Mastère Professionnel en Thérapies Comportementales et Cognitives","Mastère Professionnel en Thérapies Comportementales et Cognitives");	
+selectbox.options[19]= new Option("Mastère Professionnel en Médecine d’urgence","Mastère Professionnel en Médecine d’urgence");	
+selectbox.options[20]= new Option("Mastère Professionnel en Génétique Pathologique","Mastère Professionnel en Génétique Pathologique");	
+selectbox.options[21]= new Option("Mastère Professionnel Co-Construit en Musicothérapie","Mastère Professionnel Co-Construit en Musicothérapie");
+selectbox.options[22]= new Option("Autre","Autre");
+
+break; 
+
+case 'Faculté des sciences économiques et de gestion de Sousse':
+selectbox.options[0]= new Option("Licence en Sciences Economiques","Licence en Sciences Economiques");	
+selectbox.options[1]= new Option("Licence en Sciences de Gestion","Licence en Sciences de Gestion");	
+selectbox.options[2]= new Option("Doctorat en Sciences Economiques","Doctorat en Sciences Economiques");
+selectbox.options[3]= new Option("Doctorat en Sciences de Gestion","Doctorat en Sciences de Gestion");		
+selectbox.options[4]= new Option("Mastère de Recherche en Management","Mastère de Recherche en Management");	
+selectbox.options[5]= new Option("Mastère de Recherche en Finance","Mastère de Recherche en Finance");	
+selectbox.options[6]= new Option("Mastère de Recherche en Economie Quantitative","Mastère de Recherche en Economie Quantitative");	
+selectbox.options[7]= new Option("Mastère de Recherche en Monnaie, Finance et Banques","Mastère de Recherche en Monnaie, Finance et Banques");		
+selectbox.options[8]= new Option("Mastère Professionnel en Economie Sociale et Solidaire","Mastère Professionnel en Economie Sociale et Solidaire");	
+selectbox.options[9]= new Option("Mastère Professionnel en Commerce","Mastère Professionnel en Commerce");	
+selectbox.options[10]= new Option("Mastère Professionnel en Finance","Mastère Professionnel en Finance");	
+selectbox.options[11]= new Option("Mastère Professionnel en Comptabilité","Mastère Professionnel en Comptabilité");	
+selectbox.options[12]= new Option("Mastère Professionnel en Marketing","Mastère Professionnel en Marketing");	
+selectbox.options[13]= new Option("Mastère Professionnel Co-Construit en Management et Développement Industriel","Mastère Professionnel Co-Construit en Management et Développement Industriel");	
+selectbox.options[14]= new Option("Autre","Autre");
+selectbox.options[15]= new Option("","");
+selectbox.options[16]= new Option("","");
+selectbox.options[17]= new Option("","");
+selectbox.options[18]= new Option("","");
+selectbox.options[19]= new Option("","");
+selectbox.options[20]= new Option("","");
+selectbox.options[21]= new Option("","");
+selectbox.options[22]= new Option("","");
+break; 
+
+case 'Institut des Hautes Etudes Commerciales de Sousse':
+selectbox.options[0]= new Option("Licence en Sciences Economiques","Licence en Sciences Economiques");	
+selectbox.options[1]= new Option("Licence en Sciences de Gestion","Licence en Sciences de Gestion");		
+selectbox.options[2]= new Option("Mastère de Recherche en Finance et Actuariat","Mastère de Recherche en Finance et Actuariat");	
+selectbox.options[3]= new Option("Mastère de Recherche en Marketing","Mastère de Recherche en Marketing");	
+selectbox.options[4]= new Option("Mastère Professionnel en Comptabilité","Mastère Professionnel en Comptabilité");	
+selectbox.options[5]= new Option("Mastère Professionnel en Entrepreneuriat","Mastère Professionnel en Entrepreneuriat");	
+selectbox.options[6]= new Option("Mastère Professionnel en Management","Mastère Professionnel en Management");	
+selectbox.options[7]= new Option("Mastère Professionnel en Marketing","Mastère Professionnel en Marketing");	
+selectbox.options[8]= new Option("Doctorat en Sciences de Gestion","Doctorat en Sciences de Gestion");	
+selectbox.options[9]= new Option("Mastère Professionnel en Finance","Mastère Professionnel en Finance");
+selectbox.options[10]= new Option("Autre","Autre");
+selectbox.options[11]= new Option("","");
+selectbox.options[12]= new Option("","");
+selectbox.options[13]= new Option("","");
+selectbox.options[14]= new Option("","");
+selectbox.options[15]= new Option("","");
+selectbox.options[16]= new Option("","");
+selectbox.options[17]= new Option("","");
+selectbox.options[18]= new Option("","");
+selectbox.options[19]= new Option("","");
+selectbox.options[20]= new Option("","");
+selectbox.options[21]= new Option("","");
+selectbox.options[22]= new Option("","");
+break; 
+
+
+
+}
+}
+
+</script> 
+
+
+    
+
+
+
+</body></html>

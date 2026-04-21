@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Supervision TS1500</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+
+<body class="bg-light">
+    <div class="container my-4">
+        <h1 class="mb-4">📊 Supervision TS1500</h1>
+
+        <!-- Etat table -->
+        <div class="alert alert-info">
+            <h4>État actuel de la table</h4>
+            <p><b>Code erreur :</b> {{ code_erreur }}</p>
+        </div>
+
+        <!-- Formulaire panne -->
+        <div class="card p-3 mb-4">
+            <h4>🚨 Signaler une panne</h4>
+            <form method="POST">
+                <!-- Nom du travailleur -->
+                <div class="mb-2">
+                    <label>Nom travailleur</label>
+                    <input type="text" name="travailleur" class="form-control" required>
+                </div>
+
+                <!-- Liste des pannes prédéfinies -->
+                <div class="mb-2">
+                    <label>Description panne</label>
+                    <select name="panne" class="form-control" required>
+                        <option value="">-- Sélectionner la panne --</option>
+                        <option value="Problème électrique">Problème électrique</option>
+                        <option value="Problème mécanique">Problème mécanique</option>
+                        <option value="Erreur logicielle">Erreur logicielle</option>
+                        <option value="Maintenance régulière">Maintenance régulière</option>
+                    </select>
+                </div>
+
+                <!-- Liste des techniciens depuis la DB -->
+                <div class="mb-2">
+                    <label>Technicien assigné</label>
+                    <select name="technicien" class="form-control" required>
+                        <option value="">-- Sélectionner un technicien --</option>
+                        {% for t in techniciens %}
+                        <!-- t[1] = nom, t[2] = téléphone -->
+                        <option value="{{ t[1] }}">{{ t[1] }} ({{ t[2] }})</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <!-- Bouton d'envoi -->
+                <button type="submit" class="btn btn-danger">📢 Envoyer alerte</button>
+            </form>
+        </div>
+
+
+        <!-- Historique -->
+        <div class="card p-3">
+            <h4>📜 Historique des pannes</h4>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Travailleur</th>
+                        <th>Panne</th>
+                        <th>Technicien</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for p in pannes %}
+                    <tr>
+                        <td>{{ p[0] }}</td>
+                        <td>{{ p[1] }}</td>
+                        <td>{{ p[2] }}</td>
+                        <td>{{ p[3] }}</td>
+                        <td>{{ p[4] }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
